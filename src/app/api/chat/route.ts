@@ -61,7 +61,7 @@ ANSWER
 `;
 
     const ai = new GoogleGenAI({
-      apiKey: process.env.GEMINI_API_KEY!,
+      apiKey: process.env.Gemini_API_Key!,
     });
 
     const res = await ai.models.generateContent({
