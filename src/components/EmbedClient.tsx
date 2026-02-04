@@ -72,7 +72,7 @@ function EmbedClient({ ownerId }: { ownerId: string }) {
     const navigate = useRouter()
     const [copied, setCopied] = useState(false)
     const embedCode = `<script 
-    src="${process.env.NEXT_PUBLIC_APP_URL}/chatBot.js" 
+    src="${process.env.NEXT_PUBLIC_BASE_URL}/chatBot.js" 
     data-owner-id="${ownerId}">
 </script> `
     const copyCode = () => {
